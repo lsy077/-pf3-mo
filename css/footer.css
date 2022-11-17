@@ -1,0 +1,50 @@
+/* 하단 */
+footer{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;;
+  /*! background-color: #eaeaea; */
+}
+footer .wrap{
+  padding-bottom: 50px;
+  width: auto;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 22px;
+}
+
+footer .wrap address{
+  line-height: 1.5;
+}
+footer .wrap address .first{
+  display: flex;
+  justify-content: left;
+  column-gap: 10px;
+}
+footer .wrap address .second{
+  display: flex;
+  justify-content: left;
+  column-gap: 25px;
+}
+footer .wrap p{
+  line-height: 1.5;
+}
+footer .wrap address strong{
+  color: #6c6c6c;
+  font-size: 15px;
+}
+footer .wrap address p:nth-child(5){
+  margin-top: 20px;
+}
+
+footer h1 .main_logo{
+  display: flex;
+  justify-content:center;
+  width: 80px;
+  height: 80px;
+  top: 35px;
+  left: 660px;
+}

@@ -1,0 +1,160 @@
+div#title{
+ height: 100%;
+ color:white;
+ text-shadow: 1px 1px 2px #000;
+ background-image: url(../img/bodyimg.jpg); 
+ background-repeat: no-repeat;
+ position: relative;
+ padding-top: 280px;
+ padding-left: 400px;
+ background-size: cover;
+}
+div#title .in{
+  margin: 0 auto;
+  /*! border-top: transparent; */
+  padding-left: 161px;
+  box-sizing: border-box; /* padding을 주면 크기가 커지는데 크기가 커지지 않게 처리 */
+  position: relative;
+}
+div#title h2{
+  font-size: 21px;
+  line-height: 2;
+}
+div#title h2 + p{ /* + 인접선택자,형제선택자 h2다음에 오는 p */
+  font-size: 50px;
+  font-weight: 1000;
+  animation-name: h2;
+  animation-duration:2s;
+}
+@keyframes h2{
+  0%{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+div#title h2 + p + p{
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+div#title a{ /* 인라인태그에는 padding(크기에 영향)이 정확히 적용되지 않는다.display:block로 전환 */
+  /*! border: 1px solid; */
+  padding: 20px 30px;
+  margin-top: 30px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.5s;
+  color: #eff2f2;
+  text-shadow: 1px 1px 2px #000;
+  position: relative;
+  top: 40px;
+  left: 80px;
+}
+
+div#title a::before{
+/*   content:""; */
+  width: 300px;
+  height: 80px;
+  display: block;
+  border: 2px solid #333;
+  border-radius:20% 20% 20% 20%;
+  position: absolute;
+  top:-10px;
+  left: -2px;
+  text-align: center;
+  animation-name:title;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;  
+  animation-timing-function: ease-in-out; 
+   transition: all 0.5s;
+  box-shadow: 0px 0px 25px #c7dd9f;
+}
+@keyframes title{
+  0%{ border-color: #cccc00;}
+  25%{ border-color: #ffff4D;}
+  50%{ border-color: #f8f817;}
+  75%{ border-color: #A7A700;}
+  100%{border-color: #7D7D00;}
+}
+div#title a::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 2px solid;
+  margin-left: 10px;
+  border-left: transparent;
+  border-bottom: transparent;
+  transform: rotate(45deg);
+}
+div#title a:hover{
+  color: white;
+}
+div#title .in::after{
+ 
+}
+#title .video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#title .video iframe{
+  width: 100%;
+  height: 100%;
+}
+ div#title::before{
+    content: "";
+    width: 10px;
+    height:10px;
+    border: 2px solid #f2981b;
+    border-radius: 50%;
+    position: absolute;
+    right: 797px;
+    top: 106px;
+  }
+  div#title::after{
+     content: "";
+    width: 50px;
+    height:50px;
+    border: 2px solid #fd9700;
+    border-radius: 50%;
+    position: absolute;
+    right: 712px;
+    top:258px;
+  }
+div#title img{
+  animation-name:bgimg;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+  width: 200px;
+  height: 150px;
+   transform-origin:50% top;
+  position: absolute;
+  top: 247px;
+  left: 49px;
+}
+@keyframes bgimg{
+  0%{
+    transform: rotate(-45deg);
+  }
+  50%{
+    transform: rotate(45deg);
+  }
+  100%{
+    transform: rotate(-45deg);
+  }
+}
+
+
+
+
+
+
