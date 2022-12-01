@@ -307,7 +307,7 @@
    
 }
 #history .point div.po3 div.list p{
-  font-size: 12px;
+  font-size: 10px;
   width: 145px;
   }
   #history .point div.po3 .list p:nth-child(3){
@@ -417,6 +417,12 @@
     padding-left: 14px;
   }
   footer .wrap address{
+    font-size: 9px;
+  }
+  footer .wrap address strong{
+    font-size: 12px;
+  }
+  footer .wrap address p:nth-child(5){
     font-size: 9px;
   }
   footer h1 .main_logo{  

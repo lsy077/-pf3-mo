@@ -13,11 +13,12 @@ footer .wrap{
   width: auto;
   box-sizing: border-box;
   display: flex;
-  margin-left: 22px;
+  margin-left: 100px;
 }
 
 footer .wrap address{
   line-height: 1.5;
+  font-size: 15px;
 }
 footer .wrap address .first{
   display: flex;
@@ -34,10 +35,11 @@ footer .wrap p{
 }
 footer .wrap address strong{
   color: #6c6c6c;
-  font-size: 15px;
+  font-size: 20px;
 }
 footer .wrap address p:nth-child(5){
   margin-top: 20px;
+  font-size: 15px;
 }
 
 footer h1 .main_logo{
